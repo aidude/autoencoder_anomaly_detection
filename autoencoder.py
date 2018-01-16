@@ -13,7 +13,7 @@ from torch.autograd import Variable
 from torch.nn import functional as F
 
 
-parser = argparse.ArgumentParser(description='VAE MNIST Example')
+parser = argparse.ArgumentParser(description='AutoEncoder for Anomaly')
 parser.add_argument('--batch-size', type=int, default=128, metavar='N',
                     help='input batch size for training (default: 128)')
 parser.add_argument('--epochs', type=int, default=10, metavar='N',
