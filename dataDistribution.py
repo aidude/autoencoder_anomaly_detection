@@ -19,7 +19,7 @@ class DataDistribution(object):
 
 dataDistribution = DataDistribution()
 x = dataDistribution.gaussian_sample(2, 0.7)
-
-print(x)
+y = dataDistribution.random_sample()
+print(x, y)
 # plt.plot(float(x))
 # plt.show()
