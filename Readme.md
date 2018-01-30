@@ -12,3 +12,15 @@ can be used for fine-tuning the weights in such ‘‘autoencoder’’ networks
 the initial weights are close to a good solution. We describe an effective way of initializing the
 weights that allows deep autoencoder networks to learn low-dimensional codes that work much
 better than principal components analysis as a tool to reduce the dimensionality of data.
+
+
+The core idea is to create a autoencoder network to learn data representation of normal(non malicious) data points.
+The decoder would try to regenerate the encodings with trying to minimize loss in reconstruction. The encoding would be uniform for regular day to day data.
+The core idea is that data with anomalies will have higher reconstruction error than regular dataset.
+
+
+The paper with proper backround to implement is: 
+Outlier Detection Using Replicator Neural Networks
+by Simon Hawkins, Hongxing He, Graham Williams and Rohan Baxter
+
+
